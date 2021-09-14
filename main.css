@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    background-image: url(img/pozadina.jpg);
+    background-size: cover;
+    background-position: 70%;
+    height: 100vh;
+    position: relative;
+    margin: 0;
+}
+
+.centerPush {
+    color: white;
+    position: absolute;
+    top: 38%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.centerPush p {
+    font-size: 20px;
+}
+
+.centerPush p span {
+    opacity: 0.5;
+}
+
+.centerPush h1 {
+    font-size: 60px;
+    margin-bottom: 0;
+}
+
+.centerPush h2 {
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.naslov h4 {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-weight: 800;
+    color: #EB8A46;
+}
+
+.work {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1200px;
+    transform-style: preserve-3d;
+}
+
+.work .box {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 40px;
+    margin-right: 50px;
+    margin-left: 50px;
+    background: #ffe1a9;
+    border-radius: 14px;
+    transform-style: preserve-3d;
+}
+
+.work .box .name {
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform: translate3d(0,0,75px);
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+
+.work .box:hover .name {
+    top: 16px;
+    opacity: 1;
+    color: #fff;
+}
+
+.work .box .button {
+    position: absolute;
+    bottom: 0;
+    left: 150px;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,0,75px);
+    color: #fff;
+    background: #EB8A46;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+
+.work .box:hover .button {
+    bottom: 30px;
+    opacity: 1;
+    z-index: 10 ;
+}
+
+/* .work .box .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: 0.5s;
+    background: #fff;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,-50%,50px);
+    z-index: 10;
+    opacity: 1;
+} */
+
+.work .box .project {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 260px;
+    transition: 0.5s;
+    z-index: 11;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,-50%,50px);
+    }
+
+.work .box:hover .project {
+    transform: translate3d(-50%,-50%,100px);
+}
+
+/* .work .box:nth-child(1) .circle,
+.work .box:nth-child(1) .button {
+    background: #EB8A46;
+} */
+
+.footer {
+    margin-top: 200px;
+    margin-bottom: 0px;
+    background-color: #ffbccb;
+    padding: 20px;
+}
+
+.footer .contact {
+    font-size: 30px;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 0px;
+}
+
+#linkedin {
+    color: #0e76a8;
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+#envelope {
+    color: #582a72;
+    font-size: 30px;
+}
